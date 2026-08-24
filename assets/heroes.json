@@ -1,0 +1,428 @@
+[
+  {
+    "name": "D.Va",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "dva",
+    "minor": { "side": "right", "text": "Extended Boosters" },
+    "major": { "side": "left", "text": "Shield System" }
+  },
+  {
+    "name": "Orisa",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "orisa",
+    "minor": { "side": "right", "text": "Mobile Fortification" },
+    "major": { "side": "right", "text": "Protective Barrier" }
+  },
+  {
+    "name": "Ramattra",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "ramattra",
+    "minor": { "side": "right", "text": "Prolonged Barrier" },
+    "major": { "side": "left", "text": "Void Surge" }
+  },
+  {
+    "name": "Reinhardt",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "reinhardt",
+    "minor": { "side": "right", "text": "Crusader's Resolve" },
+    "major": { "side": "left", "text": "Shield Slam" }
+  },
+  {
+    "name": "Roadhog",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "roadhog",
+    "minor": { "side": "right", "text": "Shrapnel Launcher" },
+    "major": { "side": "left", "text": "Hogdrogen Exposure" }
+  },
+  {
+    "name": "Sigma",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "sigma",
+    "minor": { "side": "right", "text": "Hyper Regeneration" },
+    "major": { "side": "left", "text": "Hyper Strike" }
+  },
+  {
+    "name": "D.Mon",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "dmon",
+    "minor": { "side": "left", "text": "Beast Within" },
+    "major": { "side": "right", "text": "Focused Fusion" }
+  },
+  {
+    "name": "Junker Queen",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "junker-queen",
+    "minor": { "side": "left", "text": "Rampant Charge" },
+    "major": { "side": "left", "text": "Willy-Willy" }
+  },
+  {
+    "name": "Wrecking Ball",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "wrecking-ball",
+    "minor": { "side": "right", "text": "Multi-Ball" },
+    "major": { "side": "left", "text": "Hang Time" }
+  },
+  {
+    "name": "Hazard",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "hazard",
+    "minor": { "side": "right", "text": "Anarchic Zeal" },
+    "major": { "side": "left", "text": "Deep Leap" }
+  },
+  {
+    "name": "Domina",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "domina",
+    "minor": { "side": "right", "text": "Extended Power" },
+    "major": { "side": "left", "text": "Disruptive Detonation" }
+  },
+  {
+    "name": "Mauga",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "mauga",
+    "minor": { "side": "right", "text": "Pyromaniac" },
+    "major": { "side": "left", "text": "Firewalker" }
+  },
+  {
+    "name": "Doomfist",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "doomfist",
+    "minor": { "side": "right", "text": "Survival of the Fittest" },
+    "major": { "side": "right", "text": "Power Matrix" }
+  },
+  {
+    "name": "Zarya",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "zarya",
+    "minor": { "side": "right", "text": "Spotter" },
+    "major": { "side": "right", "text": "Energy Lance" }
+  },
+  {
+    "name": "Winston",
+    "role": "tank",
+    "roleName": "Tank",
+    "img": "winston",
+    "minor": { "side": "left", "text": "Electric Charge" },
+    "major": { "side": "right", "text": "Revitalizing Barrier" }
+  },
+
+  {
+    "name": "Torbjörn",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "torbjorn",
+    "minor": { "side": "left", "text": "Hammer Time" },
+    "major": { "side": "left", "text": "Anchor Bolts" }
+  },
+  {
+    "name": "Widowmaker",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "widowmaker",
+    "minor": { "side": "left", "text": "Scoped Efficiency" },
+    "major": { "side": "right", "text": "Widow's Bite" }
+  },
+  {
+    "name": "Sojourn",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "sojourn",
+    "minor": { "side": "left", "text": "Overcharged" },
+    "major": { "side": "right", "text": "Dual Thrusters" }
+  },
+  {
+    "name": "Emre",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "emre",
+    "minor": { "side": "left", "text": "Suppressive Security" },
+    "major": { "side": "left", "text": "Heat Sink" }
+  },
+  {
+    "name": "Symmetra",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "symmetra",
+    "minor": { "side": "right", "text": "Perfect Alignment" },
+    "major": { "side": "right", "text": "Shield Battery" }
+  },
+  {
+    "name": "Mei",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "mei",
+    "minor": { "side": "right", "text": "Glacial Propulsion" },
+    "major": { "side": "left", "text": "Deep Freeze" }
+  },
+  {
+    "name": "Venture",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "venture",
+    "minor": { "side": "right", "text": "Excavation Exhilaration" },
+    "major": { "side": "left", "text": "Smart Extender" }
+  },
+  {
+    "name": "Anran",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "anran",
+    "minor": { "side": "left", "text": "Smoulder" },
+    "major": { "side": "right", "text": "Hungering Blaze" }
+  },
+  {
+    "name": "Genji",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "genji",
+    "minor": { "side": "right", "text": "Dragon's Thirst" },
+    "major": { "side": "left", "text": "Blade Twisting" }
+  },
+  {
+    "name": "Pharah",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "pharah",
+    "minor": { "side": "left", "text": "Concussive Force" },
+    "major": { "side": "right", "text": "Rocket Salvo" }
+  },
+  {
+    "name": "Ashe",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "ashe",
+    "minor": { "side": "left", "text": "Remote Detonator" },
+    "major": { "side": "left", "text": "Viper's Sting" }
+  },
+  {
+    "name": "Junkrat",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "junkrat",
+    "minor": { "side": "left", "text": "Nitro Boost" },
+    "major": { "side": "right", "text": "Frag Cannon" }
+  },
+  {
+    "name": "Vendetta",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "vendetta",
+    "minor": { "side": "right", "text": "Raging Storm" },
+    "major": { "side": "left", "text": "Siphoning Strike" }
+  },
+  {
+    "name": "Tracer",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "tracer",
+    "minor": { "side": "left", "text": "Temporal Regen" },
+    "major": { "side": "right", "text": "Quantum Entanglement" }
+  },
+  {
+    "name": "Reaper",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "reaper",
+    "minor": { "side": "right", "text": "Lingering Wraith" },
+    "major": { "side": "right", "text": "Trigger Finger" }
+  },
+  {
+    "name": "Shion",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "shion",
+    "minor": { "side": "right", "text": "X Machina" },
+    "major": { "side": "right", "text": "Faces of Death" }
+  },
+  {
+    "name": "Hanzo",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "hanzo",
+    "minor": { "side": "left", "text": "Sonic Disruption" },
+    "major": { "side": "left", "text": "Frost Arrow" }
+  },
+  {
+    "name": "Soldier: 76",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "soldier-76",
+    "minor": { "side": "left", "text": "Helix Propulsion" },
+    "major": { "side": "right", "text": "Stim Pack" }
+  },
+  {
+    "name": "Sierra",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "sierra",
+    "minor": { "side": "right", "text": "Tight Grip" },
+    "major": { "side": "right", "text": "Locked In" }
+  },
+  {
+    "name": "Echo",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "echo",
+    "minor": { "side": "right", "text": "Partial Scan" },
+    "major": { "side": "right", "text": "Focused Rush" }
+  },
+  {
+    "name": "Freja",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "freja",
+    "minor": { "side": "left", "text": "Relentless Barrage" },
+    "major": { "side": "left", "text": "Aerial Recovery" }
+  },
+  {
+    "name": "Bastion",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "bastion",
+    "minor": { "side": "right", "text": "Configuration Reload" },
+    "major": { "side": "right", "text": "Self-Repair" }
+  },
+  {
+    "name": "Sombra",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "sombra",
+    "minor": { "side": "right", "text": "Ctrl Alt Esc" },
+    "major": { "side": "right", "text": "Viral Replication" }
+  },
+  {
+    "name": "Cassidy",
+    "role": "damage",
+    "roleName": "Damage",
+    "img": "cassidy",
+    "minor": { "side": "left", "text": "Bang Bang" },
+    "major": { "side": "right", "text": "Silver Bullet" }
+  },
+
+  {
+    "name": "Juno",
+    "role": "support",
+    "roleName": "Support",
+    "img": "juno",
+    "minor": { "side": "right", "text": "Locked On" },
+    "major": { "side": "right", "text": "Faster Blaster" }
+  },
+  {
+    "name": "Kiriko",
+    "role": "support",
+    "roleName": "Support",
+    "img": "kiriko",
+    "minor": { "side": "right", "text": "Fortune Teller" },
+    "major": { "side": "right", "text": "Foxtrot" }
+  },
+  {
+    "name": "Mizuki",
+    "role": "support",
+    "roleName": "Support",
+    "img": "mizuki",
+    "minor": { "side": "right", "text": "Exposed Soul" },
+    "major": { "side": "left", "text": "Resonant Return" }
+  },
+  {
+    "name": "Moira",
+    "role": "support",
+    "roleName": "Support",
+    "img": "moira",
+    "minor": { "side": "right", "text": "Ethical Nourishment" },
+    "major": { "side": "right", "text": "Phantom Step" }
+  },
+  {
+    "name": "Zenyatta",
+    "role": "support",
+    "roleName": "Support",
+    "img": "zenyatta",
+    "minor": { "side": "right", "text": "Ascendance" },
+    "major": { "side": "right", "text": "Dual Harmony" }
+  },
+  {
+    "name": "Brigitte",
+    "role": "support",
+    "roleName": "Support",
+    "img": "brigitte",
+    "minor": { "side": "right", "text": "Morale Boost" },
+    "major": { "side": "left", "text": "Inspiring Strike" }
+  },
+  {
+    "name": "Jetpack Cat",
+    "role": "support",
+    "roleName": "Support",
+    "img": "jetpack_cat",
+    "minor": { "side": "left", "text": "Ulterior Motive" },
+    "major": { "side": "left", "text": "Purrfect Form" }
+  },
+  {
+    "name": "Wuyang",
+    "role": "support",
+    "roleName": "Support",
+    "img": "wuyang",
+    "minor": { "side": "right", "text": "Balance" },
+    "major": { "side": "right", "text": "Falling Rain" }
+  },
+  {
+    "name": "Lúcio",
+    "role": "support",
+    "roleName": "Support",
+    "img": "lucio",
+    "minor": { "side": "right", "text": "Beat Drop" },
+    "major": { "side": "left", "text": "Noise Violation" }
+  },
+  {
+    "name": "Illari",
+    "role": "support",
+    "roleName": "Support",
+    "img": "illari",
+    "minor": { "side": "right", "text": "Summer Solstice" },
+    "major": { "side": "right", "text": "Sunburn" }
+  },
+  {
+    "name": "Mercy",
+    "role": "support",
+    "roleName": "Support",
+    "img": "mercy",
+    "minor": { "side": "left", "text": "Angelic Resurrection" },
+    "major": { "side": "left", "text": "Chain Boost" }
+  },
+  {
+    "name": "Lifeweaver",
+    "role": "support",
+    "roleName": "Support",
+    "img": "lifeweaver",
+    "minor": { "side": "right", "text": "Dashing Escape" },
+    "major": { "side": "right", "text": "Superbloom" }
+  },
+  {
+    "name": "Ana",
+    "role": "support",
+    "roleName": "Support",
+    "img": "ana",
+    "minor": { "side": "right", "text": "Speed Serum" },
+    "major": { "side": "right", "text": "Headhunter" }
+  },
+  {
+    "name": "Baptiste",
+    "role": "support",
+    "roleName": "Support",
+    "img": "baptiste",
+    "minor": { "side": "right", "text": "Assault Burst" },
+    "major": { "side": "left", "text": "Automated Healing" }
+  }
+]
