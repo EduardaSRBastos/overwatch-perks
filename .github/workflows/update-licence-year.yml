@@ -11,8 +11,16 @@ permissions:
 jobs:
   update-license-year:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Update License Year Action
+      - name: Update License Year on main
         uses: EduardaSRBastos/update-license-year-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
+      - name: Update License Year on develop
+        uses: EduardaSRBastos/update-license-year-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: develop
