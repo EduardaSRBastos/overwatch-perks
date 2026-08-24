@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Overwatch Perks" />
+  <meta name="keywords" content="Overwatch Perks, OW Perks" />
+  <meta name="author" content="Eduarda Bastos" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <meta property="og:title" content="Overwatch Perks" />
+  <meta property="og:description" content="Overwatch Perks" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eduardasrbastos.github.io/overwatch-perks" />
+  <meta property="og:image" content="https://eduardasrbastos.github.io/overwatch-perks/assets/images/preview.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Overwatch Perks" />
+  <meta name="twitter:description" content="Overwatch Perks" />
+  <meta name="twitter:image" content="https://eduardasrbastos.github.io/overwatch-perks/assets/images/preview.png" />
+
+  <link rel="canonical" href="https://eduardasrbastos.github.io/overwatch-perks" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
+  <title>Overwatch Heroes Perks - S4</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header role="banner">
+      <p class="eyebrow">Overwatch ● Season 4 <span class="count" id="heroCount">53 heroes</span></p>
+      <h1>Hero Perks</h1>
+      <p>Minor perk unlocks at level 2, major at level 3. <br> Every perk branches
+        <span style="color: var(--left); font-weight: 700;">left</span> or
+        <span style="color: var(--right); font-weight: 700;">right</span>.
+      </p>
+
+      <div class="legend">
+        <span><span class="swatch sw-left"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span> Left branch</span>
+        <span><span class="swatch sw-right"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span> Right branch</span>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input class="search" id="search" type="text" placeholder="Search hero or perk..." />
+      <div class="filters" id="filters">
+        <button type="button" class="chip active" data-role="all">All</button>
+        <button type="button" class="chip" data-role="tank">Tank</button>
+        <button type="button" class="chip" data-role="damage">Damage</button>
+        <button type="button" class="chip" data-role="support">Support</button>
+      </div>
+    </div>
+
+    <div id="content"></div>
+    <p class="no-results" id="noResults">No heroes match that search.</p>
+
+    <footer>
+      Perk data sourced from owperks.com and Blizzard's official hero pages. Hero portraits courtesy of owperks.com.
+      <br>Data reflects Season 4 as of August 2026 and may not be updated as future patches release, verify in-game.
+      <br> © <span id="year"></span>
+      <a href="https://github.com/EduardaSRBastos" target="_blank" rel="noopener noreferrer">Eduarda Bastos</a>.
+      Licensed
+      under the MIT License.
+    </footer>
+  </div>
+
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

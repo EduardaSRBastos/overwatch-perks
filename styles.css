@@ -1,0 +1,558 @@
+:root {
+  --bg: #1a1917;
+  --bg-raised: #211f1c;
+  --bg-raised-hi: #292621;
+  --line: #3a3732;
+
+  --text: #f5f4f1;
+  --text-dim: #aaa59c;
+
+  --tank: #42c8f5;
+  --tank-bg: #10262e;
+  --damage: #ff5263;
+  --damage-bg: #301317;
+  --support: #3cdda0;
+  --support-bg: #102a22;
+
+  --left: #f044a0;
+  --right: #6b82ff;
+
+  --accent: #ffb52e;
+
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    var(--bg) 0,
+    color-mix(in srgb, var(--bg) 90%, var(--accent) 10%) 15%,
+    var(--bg) 30%,
+    color-mix(in srgb, var(--bg) 85%, var(--accent) 15%) 50%,
+    var(--bg) 70%,
+    color-mix(in srgb, var(--bg) 90%, var(--accent) 10%) 80%,
+    var(--bg) 100%
+  );
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-color: var(--accent) var(--line);
+}
+
+body {
+  padding: 40px 18px 90px;
+}
+
+.wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===================== HEADER ===================== */
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: -10px 0 15px;
+}
+
+.eyebrow .count {
+  background: var(--accent);
+  color: #1a1300;
+  padding: 6px 15px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+header p {
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+/* legend */
+.legend {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dim);
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend .swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend .swatch svg {
+  width: 14px;
+  height: 14px;
+}
+
+.legend .sw-left {
+  background: color-mix(in srgb, var(--left) 16%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--left) 55%, transparent);
+  color: var(--left);
+}
+
+.legend .sw-right {
+  background: color-mix(in srgb, var(--right) 16%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--right) 55%, transparent);
+  color: var(--right);
+}
+
+/* ===================== CONTROLS ===================== */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 26px 0 18px;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  z-index: 5;
+  background: color-mix(in srgb, var(--bg-raised) 50%, transparent);
+  backdrop-filter: blur(25px);
+  border-radius: var(--radius);
+}
+
+.search {
+  flex: 1 1 100px;
+  background: var(--bg-raised);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search::placeholder {
+  color: #565d6d;
+  font-weight: 500;
+}
+
+.search:focus {
+  border-color: var(--accent);
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  border: 2px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.chip:hover {
+  color: var(--text);
+  border-color: #454b5c;
+  transform: translateY(-1px);
+}
+
+.chip[data-role="tank"]:hover {
+  background: var(--tank-bg);
+  color: var(--tank);
+  border-color: var(--tank);
+}
+
+.chip[data-role="damage"]:hover {
+  background: var(--damage-bg);
+  color: var(--damage);
+  border-color: var(--damage);
+}
+
+.chip[data-role="support"]:hover {
+  background: var(--support-bg);
+  color: var(--support);
+  border-color: var(--support);
+}
+
+.chip.active {
+  color: #06070a;
+}
+
+.chip[data-role="all"].active {
+  background: var(--text);
+}
+
+.chip[data-role="tank"].active {
+  background: var(--tank);
+}
+
+.chip[data-role="damage"].active {
+  background: var(--damage);
+}
+
+.chip[data-role="support"].active {
+  background: var(--support);
+}
+
+.chip[data-role="tank"].active:hover,
+.chip[data-role="damage"].active:hover,
+.chip[data-role="support"].active:hover,
+.chip[data-role="all"].active:hover {
+  color: #06070a;
+  filter: brightness(1.08);
+}
+
+/* ===================== ROLE SECTIONS ===================== */
+
+.role-section {
+  margin-bottom: 40px;
+}
+
+.role-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.role-heading .swatch-dot {
+  width: 12px;
+  height: 12px;
+}
+
+.role-heading.tank .swatch-dot {
+  border-radius: 0;
+}
+
+.role-heading.damage .swatch-dot {
+  border-radius: 50%;
+}
+
+.role-heading.support .swatch-dot {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid var(--support);
+}
+
+.role-heading.tank {
+  background: var(--tank-bg);
+  color: var(--tank);
+}
+
+.role-heading.tank .swatch-dot {
+  background: var(--tank);
+}
+
+.role-heading.damage {
+  background: var(--damage-bg);
+  color: var(--damage);
+}
+
+.role-heading.damage .swatch-dot {
+  background: var(--damage);
+}
+
+.role-heading.support {
+  background: var(--support-bg);
+  color: var(--support);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 15px 20px;
+  transition: all 0.3s;
+}
+
+/* ===================== TANK ===================== */
+
+.hero-card.tank {
+  --card-bg: #082431bb;
+  --card-bg-alt: #041a27bb;
+}
+
+.hero-card.tank:nth-child(odd) {
+  background: var(--card-bg);
+}
+
+.hero-card.tank:nth-child(even) {
+  background: var(--card-bg-alt);
+}
+
+/* ===================== DAMAGE ===================== */
+
+.hero-card.damage {
+  --card-bg: #25060cbb;
+  --card-bg-alt: #1d0207bb;
+}
+
+.hero-card.damage:nth-child(odd) {
+  background: var(--card-bg);
+}
+
+.hero-card.damage:nth-child(even) {
+  background: var(--card-bg-alt);
+}
+
+/* ===================== SUPPORT ===================== */
+
+.hero-card.support {
+  --card-bg: #07251cbb;
+  --card-bg-alt: #031d14bb;
+}
+
+.hero-card.support:nth-child(odd) {
+  background: var(--card-bg);
+}
+
+.hero-card.support:nth-child(even) {
+  background: var(--card-bg-alt);
+}
+
+/* Hover */
+
+.hero-card:hover {
+  border-color: #3a3f4f;
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.hero-id {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-portrait {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.role-bar {
+  width: 6px;
+  align-self: stretch;
+  border-radius: 4px;
+}
+
+.role-bar.tank {
+  background: var(--tank);
+}
+
+.role-bar.damage {
+  background: var(--damage);
+}
+
+.role-bar.support {
+  background: var(--support);
+}
+
+.hero-name {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.perk-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perk-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #656c80;
+}
+
+.perk-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.badge {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge svg {
+  width: 24px;
+  height: 24px;
+}
+
+.badge.left {
+  background: color-mix(in srgb, var(--left) 16%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--left) 55%, transparent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--left) 30%, transparent);
+  color: var(--left);
+}
+
+.badge.right {
+  background: color-mix(in srgb, var(--right) 16%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--right) 55%, transparent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--right) 30%, transparent);
+  color: var(--right);
+}
+
+.perk-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+/* ===================== FOOTER ===================== */
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--text-dim);
+  font-size: 12px;
+  text-align: center;
+}
+
+.no-results {
+  display: none;
+  color: var(--text-dim);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* ===================== BACK TO TOP ===================== */
+
+.to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #1a1300;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: 20;
+}
+
+.to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.to-top:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.to-top svg {
+  width: 22px;
+  height: 22px;
+}
+
+.chip:focus-visible,
+.to-top:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 640px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .hero-id {
+    margin-bottom: 2px;
+  }
+}
