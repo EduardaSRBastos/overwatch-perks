@@ -17,7 +17,6 @@
 - [Features](#features)
 - [Data](#data)
 - [How to Use](#how-to-use)
-<!--- [Performance Score](#pagespeed-insights-performance-score)-->
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -62,17 +61,6 @@ Perk information is sourced from [owperks.com](https://owperks.com/) and [Blizza
 4. **Step 4**: Check each hero's **Minor Perk** and **Major Perk** columns with the **Left** and **Right** indicators.
 
 <br>
-
-<!--
-## PageSpeed Insights Performance Score
-<div align="center">
-  
-| [Desktop](https://pagespeed.web.dev/analysis/https-eduardasrbastos-github-io-overwatch-perks/zacmq8kevy?form_factor=desktop) | [Mobile](https://pagespeed.web.dev/analysis/https-eduardasrbastos-github-io-overwatch-perks/zacmq8kevy?form_factor=mobile) |
-|-------|-------|
-| <kbd> ![image](desktop score image url) </kbd> | <kbd> ![image](mobile score image url) </kbd> |
-
-</div>
--->
 
 ## Contributing
 - Support this project by giving it a star ⭐. Thanks!

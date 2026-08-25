@@ -600,7 +600,7 @@ header p {
 
 footer {
   margin-top: 50px;
- padding-top: 20px;
+  padding-top: 20px;
   border-top: 1px solid var(--line);
   color: var(--text-dim);
   font-size: 12px;
