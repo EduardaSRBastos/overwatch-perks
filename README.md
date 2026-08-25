@@ -2,11 +2,10 @@
   
 # Overwatch Perks
 [![GitHub License](https://img.shields.io/github/license/EduardaSRBastos/overwatch-perks?style=plastic&color=darkred)](https://github.com/EduardaSRBastos/overwatch-perks?tab=MIT-1-ov-file)
-[![GitHub Release](https://img.shields.io/github/v/release/EduardaSRBastos/overwatch-perks?style=plastic&color=orange)](https://github.com/EduardaSRBastos/overwatch-perks/releases)
 [![GitHub branch check runs](https://img.shields.io/github/check-runs/EduardaSRBastos/overwatch-perks/main?style=plastic)](https://github.com/EduardaSRBastos/overwatch-perks/actions)
 [![GitHub repo size](https://img.shields.io/github/repo-size/EduardaSRBastos/overwatch-perks?style=plastic)](https://github.com/EduardaSRBastos/overwatch-perks)
 
-<p><i>A simple, searchable reference for Overwatch hero perks.</i></p>
+<p><i>A quick guide to Overwatch hero perks.</i></p>
 
 <kbd> ![image](assets/images/preview.png) </kbd>
 

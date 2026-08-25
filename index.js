@@ -3,6 +3,7 @@ const IMG_BASE = "https://owperks.com/_next/image?url=%2Fheroes-icons/";
 
 const content = document.getElementById("content");
 const noResults = document.getElementById("noResults");
+const resultsStatus = document.getElementById("resultsStatus");
 const heroCount = document.getElementById("heroCount");
 const search = document.getElementById("search");
 const filters = document.getElementById("filters");
@@ -25,10 +26,12 @@ function perkCol(label, perk) {
     `;
   }
 
+  const sideLabel = perk.side === "left" ? "Left branch" : "Right branch";
+
   const arrow =
     perk.side === "left"
       ? `
-        <svg viewBox="0 0 24 24" fill="none">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
           <path
             d="M15 6l-6 6 6 6"
             stroke="currentColor"
@@ -39,7 +42,7 @@ function perkCol(label, perk) {
         </svg>
       `
       : `
-        <svg viewBox="0 0 24 24" fill="none">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
           <path
             d="M9 6l6 6-6 6"
             stroke="currentColor"
@@ -55,7 +58,7 @@ function perkCol(label, perk) {
       <div class="perk-label">${label}</div>
 
       <div class="perk-row">
-        <div class="badge ${perk.side}">
+        <div class="badge ${perk.side}" role="img" aria-label="${sideLabel}">
           ${arrow}
         </div>
 
@@ -82,6 +85,7 @@ function matches(hero, query) {
 function render() {
   content.innerHTML = "";
   let anyVisible = false;
+  let visibleCount = 0;
 
   ROLE_ORDER.forEach((role) => {
     if (currentRole !== "all" && currentRole !== role) {
@@ -95,17 +99,18 @@ function render() {
     if (!group.length) return;
 
     anyVisible = true;
+    visibleCount += group.length;
 
     const section = document.createElement("div");
     section.className = "role-section";
 
     section.innerHTML = `
       <div class="role-heading ${role}">
-        <span class="swatch-dot"></span>
+        <span class="swatch-dot" aria-hidden="true"></span>
 
-        ${group[0].roleName}
+        <h2>${group[0].roleName}</h2>
 
-        <span style="opacity:.55;font-weight:600;">
+        <span style="opacity:.55;font-weight:600;" aria-hidden="true">
           · ${group.length}
         </span>
       </div>
@@ -117,7 +122,7 @@ function render() {
               <div class="hero-card ${role}">
 
                 <div class="hero-id">
-                  <div class="role-bar ${role}"></div>
+                  <div class="role-bar ${role}" aria-hidden="true"></div>
 
                   <img
                     class="hero-portrait"
@@ -147,6 +152,10 @@ function render() {
 
   noResults.style.display = anyVisible ? "none" : "block";
 
+  resultsStatus.textContent = anyVisible
+    ? `Showing ${visibleCount} of ${heroes.length} heroes`
+    : "No heroes match that search.";
+
   document.querySelectorAll(".hero-portrait").forEach((img) => {
     img.addEventListener("error", () => {
       img.style.visibility = "hidden";
@@ -155,21 +164,22 @@ function render() {
 }
 
 // Role filters
-filters.addEventListener("click", (e) => {
-  const button = e.target.closest(".chip");
-
-  if (!button) return;
-
-  document
-    .querySelectorAll(".chip")
-    .forEach((chip) => chip.classList.remove("active"));
-
-  button.classList.add("active");
-
-  currentRole = button.dataset.role;
-
-  render();
+document.querySelectorAll(".chip").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.classList.remove("active");
+      chip.setAttribute("aria-pressed", "false");
+    });
+ 
+    button.classList.add("active");
+    button.setAttribute("aria-pressed", "true");
+ 
+    currentRole = button.dataset.role;
+ 
+    render();
+  });
 });
+
 
 // Search
 search.addEventListener("input", (e) => {

@@ -14,12 +14,12 @@
   --support: #3cdda0;
   --support-bg: #102a22;
 
-  --left: #f044a0;
-  --right: #6b82ff;
+  --left: #f85caf;
+  --right: #7d90fc;
 
   --accent: #ffb52e;
 
-  --radius: 14px;
+  --cut: 14px;
 }
 
 * {
@@ -55,6 +55,56 @@ body {
   margin: 0 auto;
 }
 
+/* ===================== ACCESSIBILITY UTILITIES ===================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: #1a1300;
+  padding: 12px 20px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ===================== HEADER ===================== */
 
 .eyebrow {
@@ -74,7 +124,14 @@ body {
   background: var(--accent);
   color: #1a1300;
   padding: 6px 15px;
-  border-radius: 12px;
+  clip-path: polygon(
+    8px 0,
+    100% 0,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0 100%,
+    0 8px
+  );
   font-size: 13px;
 }
 
@@ -84,6 +141,9 @@ h1 {
   font-size: 40px;
   margin: 0 0 10px;
   text-align: center;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 header p {
@@ -115,15 +175,15 @@ header p {
 .legend .swatch {
   width: 26px;
   height: 26px;
-  border-radius: 8px;
+  clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .legend .swatch svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
 }
 
 .legend .sw-left {
@@ -145,22 +205,21 @@ header p {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  margin: 26px 0 18px;
+  margin: 26px -18px 18px;
   position: sticky;
   top: 0;
   padding: 15px;
   z-index: 5;
-  background: color-mix(in srgb, var(--bg-raised) 50%, transparent);
   backdrop-filter: blur(25px);
-  border-radius: var(--radius);
+  clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
 }
 
 .search {
   flex: 1 1 100px;
   background: var(--bg-raised);
   border: 2px solid var(--line);
-  border-radius: var(--radius);
-  padding: 12px 16px;
+  clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+  padding: 12px 20px;
   color: var(--text);
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -189,9 +248,10 @@ header p {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.02em;
-  padding: 12px 20px;
-  border-radius: var(--radius);
+  text-transform: uppercase;
+  padding: 12px 22px;
   border: 2px solid var(--line);
+  clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
   background: var(--bg-raised);
   color: var(--text-dim);
   cursor: pointer;
@@ -267,29 +327,83 @@ header p {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0 0 12px;
-  padding: 12px 14px;
-  border-radius: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.role-heading h2 {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
 }
 
 .role-heading .swatch-dot {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
+  position: relative;
 }
 
 .role-heading.tank .swatch-dot {
-  border-radius: 0;
+  background: var(--tank);
+  clip-path: polygon(50% 0%, 100% 20%, 100% 60%, 50% 100%, 0% 60%, 0% 20%);
 }
 
 .role-heading.damage .swatch-dot {
+  background: transparent;
+  border: 2px solid var(--damage);
   border-radius: 50%;
 }
 
+.role-heading.damage .swatch-dot::before,
+.role-heading.damage .swatch-dot::after {
+  content: "";
+  position: absolute;
+  background: var(--damage);
+}
+
+.role-heading.damage .swatch-dot::before {
+  left: 50%;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  transform: translateX(-50%);
+}
+
+.role-heading.damage .swatch-dot::after {
+  top: 50%;
+  left: -4px;
+  right: -4px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
 .role-heading.support .swatch-dot {
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 12px solid var(--support);
+  background: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+.role-heading.support .swatch-dot::before,
+.role-heading.support .swatch-dot::after {
+  content: "";
+  position: absolute;
+  background: var(--support);
+}
+
+.role-heading.support .swatch-dot::before {
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.role-heading.support .swatch-dot::after {
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 4px;
 }
 
 .role-heading.tank {
@@ -297,17 +411,9 @@ header p {
   color: var(--tank);
 }
 
-.role-heading.tank .swatch-dot {
-  background: var(--tank);
-}
-
 .role-heading.damage {
   background: var(--damage-bg);
   color: var(--damage);
-}
-
-.role-heading.damage .swatch-dot {
-  background: var(--damage);
 }
 
 .role-heading.support {
@@ -325,7 +431,14 @@ header p {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   border: 2px solid var(--line);
-  border-radius: var(--radius);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% 100%,
+    20px 100%,
+    0 calc(100% - 20px)
+  );
   padding: 15px 20px;
   transition: all 0.3s;
 }
@@ -376,7 +489,6 @@ header p {
 }
 
 /* Hover */
-
 .hero-card:hover {
   border-color: #3a3f4f;
   filter: brightness(1.15);
@@ -392,13 +504,19 @@ header p {
 .hero-portrait {
   width: 50px;
   height: 50px;
-  border-radius: 10px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px)
+  );
 }
 
 .role-bar {
   width: 6px;
   align-self: stretch;
-  border-radius: 4px;
 }
 
 .role-bar.tank {
@@ -432,7 +550,7 @@ header p {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #656c80;
+  color: var(--text-dim);
 }
 
 .perk-row {
@@ -446,7 +564,7 @@ header p {
   width: 34px;
   height: 34px;
   flex-shrink: 0;
-  border-radius: 10px;
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,11 +600,16 @@ header p {
 
 footer {
   margin-top: 50px;
-  padding-top: 20px;
+ padding-top: 20px;
   border-top: 1px solid var(--line);
   color: var(--text-dim);
   font-size: 12px;
   text-align: center;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .no-results {
@@ -506,7 +629,16 @@ footer {
   bottom: 22px;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  clip-path: polygon(
+    30% 0,
+    70% 0,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 70%,
+    0 30%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,12 +668,6 @@ footer {
 .to-top svg {
   width: 22px;
   height: 22px;
-}
-
-.chip:focus-visible,
-.to-top:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
 }
 
 /* ===================== RESPONSIVE ===================== */
