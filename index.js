@@ -105,7 +105,7 @@ function render() {
 
         ${group[0].roleName}
 
-        <span style="opacity:.55;font-weight:600;">
+        <span style="opacity:.7;font-weight:600;">
           · ${group.length}
         </span>
       </div>
@@ -208,7 +208,7 @@ async function loadHeroes() {
     heroCount.textContent = `${heroes.length} heroes`;
 
     render();
-    
+
   } catch (error) {
     console.error("Failed to load heroes.json:", error);
 
