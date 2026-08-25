@@ -35,40 +35,49 @@
 </head>
 
 <body>
+  <a href="#main" class="skip-link">Skip to hero list</a>
+
   <div class="wrap">
 
     <header role="banner">
       <p class="eyebrow">Overwatch ● Season 4 <span class="count" id="heroCount"></span></p>
       <h1>Hero Perks</h1>
-      <p>Minor perk unlocks at level 2, major at level 3. <br> Every perk branches
-        <span style="color: var(--left); font-weight: 700;">left</span> or
-        <span style="color: var(--right); font-weight: 700;">right</span>.
-      </p>
+        <p>Minor perk unlocks at level 2, major at level 3. <br> Every perk branches
+          <span style="color: var(--left); font-weight: 700;">left</span> or
+          <span style="color: var(--right); font-weight: 700;">right</span>.
+        </p>
 
-      <div class="legend">
-        <span><span class="swatch sw-left"><svg viewBox="0 0 24 24" fill="none">
-              <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg></span> Left branch</span>
-        <span><span class="swatch sw-right"><svg viewBox="0 0 24 24" fill="none">
-              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg></span> Right branch</span>
+        <div class="legend">
+          <span><span class="swatch sw-left"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></span> Left branch</span>
+          <span><span class="swatch sw-right"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></span> Right branch</span>
       </div>
     </header>
 
-    <div class="controls">
-      <input class="search" id="search" type="text" placeholder="Search hero or perk..." />
-      <div class="filters" id="filters">
-        <button type="button" class="chip active" data-role="all">All</button>
-        <button type="button" class="chip" data-role="tank">Tank</button>
-        <button type="button" class="chip" data-role="damage">Damage</button>
-        <button type="button" class="chip" data-role="support">Support</button>
-      </div>
-    </div>
+    <main id="main">
+      <div class="controls">
+        <label for="search" class="sr-only">Search hero or perk</label>
+        <input class="search" id="search" type="text" placeholder="Search hero or perk..."
+          aria-label="Search hero or perk" />
 
-    <div id="content" role="main"></div>
-    <p class="no-results" id="noResults">No heroes match that search.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filter heroes by role">
+          <button type="button" class="chip active" data-role="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-role="tank" aria-pressed="false">Tank</button>
+          <button type="button" class="chip" data-role="damage" aria-pressed="false">Damage</button>
+          <button type="button" class="chip" data-role="support" aria-pressed="false">Support</button>
+        </div>
+      </div>
+
+      <p id="resultsStatus" class="sr-only" role="status" aria-live="polite"></p>
+
+      <div id="content"></div>
+      <p class="no-results" id="noResults" role="status" aria-live="polite">No heroes match that search.</p>
+    </main>
 
     <footer>
       Perk data sourced from owperks.com and Blizzard's official hero pages. Hero portraits courtesy of owperks.com.
@@ -80,7 +89,7 @@
   </div>
 
   <button type="button" class="to-top" id="toTop" aria-label="Back to top" title="Back to top">
-    <svg viewBox="0 0 24 24" fill="none">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
       <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
         stroke-linejoin="round" />
     </svg>
