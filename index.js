@@ -110,7 +110,7 @@ function render() {
 
         <h2>${group[0].roleName}</h2>
 
-        <span style="opacity:.55;font-weight:600;" aria-hidden="true">
+        <span style="opacity:.7;font-weight:600;" aria-hidden="true">
           · ${group.length}
         </span>
       </div>
@@ -128,6 +128,8 @@ function render() {
                     class="hero-portrait"
                     src="${IMG_BASE}${hero.img}.webp&w=64&q=75"
                     alt="${hero.name}"
+                    width="50"
+                    height="50"
                     loading="lazy"
                   >
 
@@ -163,23 +165,21 @@ function render() {
   });
 }
 
-// Role filters
 document.querySelectorAll(".chip").forEach((button) => {
   button.addEventListener("click", () => {
     document.querySelectorAll(".chip").forEach((chip) => {
       chip.classList.remove("active");
       chip.setAttribute("aria-pressed", "false");
     });
- 
+
     button.classList.add("active");
     button.setAttribute("aria-pressed", "true");
- 
+
     currentRole = button.dataset.role;
- 
+
     render();
   });
 });
-
 
 // Search
 search.addEventListener("input", (e) => {

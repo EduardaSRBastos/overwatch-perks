@@ -29,9 +29,20 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <link rel="preconnect" href="https://owperks.com" crossorigin>
+  <link rel="preload" as="fetch" href="./assets/heroes.json" crossorigin>
+
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@500;600;700;800&display=swap"
-    rel="stylesheet">
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@500;600;700;800&display=swap">
+  </noscript>
+
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -42,20 +53,20 @@
     <header role="banner">
       <p class="eyebrow">Overwatch ● Season 4 <span class="count" id="heroCount"></span></p>
       <h1>Hero Perks</h1>
-        <p>Minor perk unlocks at level 2, major at level 3. <br> Every perk branches
-          <span style="color: var(--left); font-weight: 700;">left</span> or
-          <span style="color: var(--right); font-weight: 700;">right</span>.
-        </p>
+      <p>Minor perk unlocks at level 2, major at level 3. <br> Every perk branches
+        <span style="color: var(--left); font-weight: 700;">left</span> or
+        <span style="color: var(--right); font-weight: 700;">right</span>.
+      </p>
 
-        <div class="legend">
-          <span><span class="swatch sw-left"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-                <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg></span> Left branch</span>
-          <span><span class="swatch sw-right"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg></span> Right branch</span>
+      <div class="legend">
+        <span><span class="swatch sw-left"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span> Left branch</span>
+        <span><span class="swatch sw-right"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span> Right branch</span>
       </div>
     </header>
 
@@ -96,7 +107,5 @@
   </button>
 
 </body>
-
-<script src="index.js"></script>
 
 </html>
