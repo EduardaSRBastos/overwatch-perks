@@ -550,14 +550,14 @@
     "roleName": "Damage",
     "img": "echo",
     "minor": {
-      "side": "right",
-      "text": "Partial Scan",
-      "desc": "Duplicate starts with 30% of its ultimate charge."
+      "side": "left",
+      "text": "Aerial Munitions",
+      "desc": "Echo has infinite ammo during Flight."
     },
     "major": {
-      "side": "right",
-      "text": "Focused Rush",
-      "desc": "Focusing Beam's range is increased by 8 meters and movement speed is increased by 25% when active."
+      "side": "left",
+      "text": "Full Salvo",
+      "desc": "Sticky Bombs fires 2 additional projectiles."
     }
   },
   {
