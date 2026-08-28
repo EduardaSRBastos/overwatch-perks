@@ -62,9 +62,11 @@ function perkCol(label, perk) {
           ${arrow}
         </div>
 
-        <div class="perk-text">
-          ${perk.text}
+        <div class="perk-content">
+          <div class="perk-text">${perk.text}</div>
+          ${perk.desc ? `<div class="perk-desc">${perk.desc}</div>` : ""}
         </div>
+
       </div>
     </div>
   `;
