@@ -4,120 +4,240 @@
     "role": "tank",
     "roleName": "Tank",
     "img": "dva",
-    "minor": { "side": "right", "text": "Extended Boosters" },
-    "major": { "side": "left", "text": "Shield System" }
+    "minor": {
+      "side": "right",
+      "text": "Extended Boosters",
+      "desc": "Hitting an enemy with Boosters deals 40% increased damage and extends the duration by 0.5 seconds."
+    },
+    "major": {
+      "side": "left",
+      "text": "Shield System",
+      "desc": "Convert 100 health to shields. Defense Matrix restores shields based on 25% of its damage absorbed."
+    }
   },
   {
     "name": "Orisa",
     "role": "tank",
     "roleName": "Tank",
     "img": "orisa",
-    "minor": { "side": "right", "text": "Mobile Fortification" },
-    "major": { "side": "right", "text": "Protective Barrier" }
+    "minor": {
+      "side": "right",
+      "text": "Mobile Fortification",
+      "desc": "While Fortify is active, Orisa has no movement speed reduction and no heat generation."
+    },
+    "major": {
+      "side": "right",
+      "text": "Protective Barrier",
+      "desc": "Convert Javelin Spin to instead launch a barrier."
+    }
   },
   {
     "name": "Ramattra",
     "role": "tank",
     "roleName": "Tank",
     "img": "ramattra",
-    "minor": { "side": "right", "text": "Prolonged Barrier" },
-    "major": { "side": "left", "text": "Void Surge" }
+    "minor": {
+      "side": "right",
+      "text": "Prolonged Barrier",
+      "desc": "Void Barrier's duration and size is increased by 25%."
+    },
+    "major": {
+      "side": "left",
+      "text": "Void Surge",
+      "desc": "Void Accelerator periodically releases a burst of 6 additional projectiles during continuous fire."
+    }
   },
   {
     "name": "Reinhardt",
     "role": "tank",
     "roleName": "Tank",
     "img": "reinhardt",
-    "minor": { "side": "right", "text": "Crusader's Resolve" },
-    "major": { "side": "left", "text": "Shield Slam" }
+    "minor": {
+      "side": "right",
+      "text": "Crusader's Resolve",
+      "desc": "While using Barrier Field, your passive health regeneration triggers 75% sooner."
+    },
+    "major": {
+      "side": "left",
+      "text": "Shield Slam",
+      "desc": "While Barrier Field is active, use [Secondary Fire/Right Click] to damage and knockback enemies."
+    }
   },
   {
     "name": "Roadhog",
     "role": "tank",
     "roleName": "Tank",
     "img": "roadhog",
-    "minor": { "side": "right", "text": "Shrapnel Launcher" },
-    "major": { "side": "left", "text": "Hogdrogen Exposure" }
+    "minor": {
+      "side": "right",
+      "text": "Shrapnel Launcher",
+      "desc": "Extend the range of Scrap Gun's secondary fire by 50% and tighten its burst spread by 25%."
+    },
+    "major": {
+      "side": "left",
+      "text": "Hogdrogen Exposure",
+      "desc": "Take A Breather also heals nearby allies for 50% of its healing."
+    }
   },
   {
     "name": "Sigma",
     "role": "tank",
     "roleName": "Tank",
     "img": "sigma",
-    "minor": { "side": "right", "text": "Hyper Regeneration" },
-    "major": { "side": "left", "text": "Hyper Strike" }
+    "minor": {
+      "side": "right",
+      "text": "Hyper Regeneration",
+      "desc": "30% of Hyperspheres' damage restores Experimental Barrier's health."
+    },
+    "major": {
+      "side": "left",
+      "text": "Hyper Strike",
+      "desc": "Every 5 direct hits with Hyperspheres, your next successful Quick Melee levitates and knocks away enemies."
+    }
   },
   {
     "name": "D.Mon",
     "role": "tank",
     "roleName": "Tank",
     "img": "dmon",
-    "minor": { "side": "left", "text": "Beast Within" },
-    "major": { "side": "right", "text": "Focused Fusion" }
+    "minor": {
+      "side": "left",
+      "text": "Beast Within",
+      "desc": "Plasma Saber hits heal Power Barrier by 40 health."
+    },
+    "major": {
+      "side": "right",
+      "text": "Focused Fusion",
+      "desc": "Fusion Repeater fires stronger shots with no spread at a slower rate."
+    }
   },
   {
     "name": "Junker Queen",
     "role": "tank",
     "roleName": "Tank",
     "img": "junker-queen",
-    "minor": { "side": "left", "text": "Rampant Charge" },
-    "major": { "side": "left", "text": "Willy-Willy" }
+    "minor": {
+      "side": "left",
+      "text": "Rampant Charge",
+      "desc": "Gain Unstoppable and reduce all cooldowns by 6 seconds when using Rampage."
+    },
+    "major": {
+      "side": "left",
+      "text": "Willy-Willy",
+      "desc": "When recalling Jagged Blade its radius is increased by 100% and it deals 30 additional impact damage."
+    }
   },
   {
     "name": "Wrecking Ball",
     "role": "tank",
     "roleName": "Tank",
     "img": "wrecking-ball",
-    "minor": { "side": "right", "text": "Multi-Ball" },
-    "major": { "side": "left", "text": "Hang Time" }
+    "minor": {
+      "side": "right",
+      "text": "Multi-Ball",
+      "desc": "Press A within 5 seconds after using Minefield to deploy 7 additional mines."
+    },
+    "major": {
+      "side": "left",
+      "text": "Hang Time",
+      "desc": "Piledriver winds up longer, gaining air control and dealing up to 50% more damage."
+    }
   },
   {
     "name": "Hazard",
     "role": "tank",
     "roleName": "Tank",
     "img": "hazard",
-    "minor": { "side": "right", "text": "Anarchic Zeal" },
-    "major": { "side": "left", "text": "Deep Leap" }
+    "minor": {
+      "side": "right",
+      "text": "Anarchic Zeal",
+      "desc": "Spike Guard's spikes gain 40% Lifesteal."
+    },
+    "major": {
+      "side": "left",
+      "text": "Deep Leap",
+      "desc": "Violent Leap's range is increased by 20%."
+    }
   },
   {
     "name": "Domina",
     "role": "tank",
     "roleName": "Tank",
     "img": "domina",
-    "minor": { "side": "right", "text": "Extended Power" },
-    "major": { "side": "left", "text": "Disruptive Detonation" }
+    "minor": {
+      "side": "right",
+      "text": "Extended Power",
+      "desc": "Increase the range of Photon Magnum by 20%."
+    },
+    "major": {
+      "side": "left",
+      "text": "Disruptive Detonation",
+      "desc": "Enemies hit by Crystal Charge's explosion are slowed by 30% for 2 seconds."
+    }
   },
   {
     "name": "Mauga",
     "role": "tank",
     "roleName": "Tank",
     "img": "mauga",
-    "minor": { "side": "right", "text": "Pyromaniac" },
-    "major": { "side": "left", "text": "Firewalker" }
+    "minor": {
+      "side": "right",
+      "text": "Pyromaniac",
+      "desc": "Igniting enemies with Incendiary Chaingun grants 50 overhealth."
+    },
+    "major": {
+      "side": "left",
+      "text": "Firewalker",
+      "desc": "Overrun ignites enemies hit."
+    }
   },
   {
     "name": "Doomfist",
     "role": "tank",
     "roleName": "Tank",
     "img": "doomfist",
-    "minor": { "side": "right", "text": "Survival of the Fittest" },
-    "major": { "side": "right", "text": "Power Matrix" }
+    "minor": {
+      "side": "right",
+      "text": "Survival of the Fittest",
+      "desc": "The Best Defense grants 25 overhealth from eliminations and its max overhealth is increased by 50."
+    },
+    "major": {
+      "side": "right",
+      "text": "Power Matrix",
+      "desc": "Power Block absorbs projectiles for the first 0.8 seconds of its duration."
+    }
   },
   {
     "name": "Zarya",
     "role": "tank",
     "roleName": "Tank",
     "img": "zarya",
-    "minor": { "side": "right", "text": "Spotter" },
-    "major": { "side": "right", "text": "Energy Lance" }
+    "minor": {
+      "side": "right",
+      "text": "Spotter",
+      "desc": "Projected Barrier activates ally health regeneration and increases their movement speed by 20%."
+    },
+    "major": {
+      "side": "right",
+      "text": "Energy Lance",
+      "desc": "Particle Cannon's beam pierces enemies."
+    }
   },
   {
     "name": "Winston",
     "role": "tank",
     "roleName": "Tank",
     "img": "winston",
-    "minor": { "side": "left", "text": "Electric Charge" },
-    "major": { "side": "right", "text": "Revitalizing Barrier" }
+    "minor": {
+      "side": "left",
+      "text": "Electric Charge",
+      "desc": "Winston gains 10% movement speed for each enemy he is damaging with Tesla Cannon's primary fire, up to 30%."
+    },
+    "major": {
+      "side": "right",
+      "text": "Revitalizing Barrier",
+      "desc": "Barrier Projector heals allies within it for 35 health per second."
+    }
   },
 
   {
@@ -125,192 +245,384 @@
     "role": "damage",
     "roleName": "Damage",
     "img": "torbjorn",
-    "minor": { "side": "left", "text": "Hammer Time" },
-    "major": { "side": "left", "text": "Anchor Bolts" }
+    "minor": {
+      "side": "left",
+      "text": "Hammer Time",
+      "desc": "Move 20% faster while Forge Hammer is equipped."
+    },
+    "major": {
+      "side": "left",
+      "text": "Anchor Bolts",
+      "desc": "Deploy Turret's throw range is increased by 50% and it can now attach to walls and ceilings."
+    }
   },
   {
     "name": "Widowmaker",
     "role": "damage",
     "roleName": "Damage",
     "img": "widowmaker",
-    "minor": { "side": "left", "text": "Scoped Efficiency" },
-    "major": { "side": "right", "text": "Widow's Bite" }
+    "minor": {
+      "side": "left",
+      "text": "Scoped Efficiency",
+      "desc": "Scoped shots cost 3 ammo instead of 5."
+    },
+    "major": {
+      "side": "right",
+      "text": "Widow's Bite",
+      "desc": "Scoped shots can charge up to 125%, piercing enemies when fully charged."
+    }
   },
   {
     "name": "Sojourn",
     "role": "damage",
     "roleName": "Damage",
     "img": "sojourn",
-    "minor": { "side": "left", "text": "Overcharged" },
-    "major": { "side": "right", "text": "Dual Thrusters" }
+    "minor": {
+      "side": "left",
+      "text": "Overcharged",
+      "desc": "Railgun's maximum energy is increased by 50 while Overclock is active."
+    },
+    "major": {
+      "side": "right",
+      "text": "Dual Thrusters",
+      "desc": "Power Slide gains an additional charge and its jump height shifts to lateral movement."
+    }
   },
   {
     "name": "Emre",
     "role": "damage",
     "roleName": "Damage",
     "img": "emre",
-    "minor": { "side": "left", "text": "Suppressive Security" },
-    "major": { "side": "left", "text": "Heat Sink" }
+    "minor": {
+      "side": "left",
+      "text": "Suppressive Security",
+      "desc": "Override Protocol's light rounds slow enemies by 30% for 1.5 second."
+    },
+    "major": {
+      "side": "left",
+      "text": "Heat Sink",
+      "desc": "Direct hits with Siphon Blaster refunds 60% heat and increase its duration by 0.1 seconds."
+    }
   },
   {
     "name": "Symmetra",
     "role": "damage",
     "roleName": "Damage",
     "img": "symmetra",
-    "minor": { "side": "right", "text": "Perfect Alignment" },
-    "major": { "side": "right", "text": "Shield Battery" }
+    "minor": {
+      "side": "right",
+      "text": "Perfect Alignment",
+      "desc": "Increase the range of Photon Projector's primary fire by 20%."
+    },
+    "major": {
+      "side": "right",
+      "text": "Shield Battery",
+      "desc": "Symmetra regenerates 20 shields per second while within 10 meters of her teleporter."
+    }
   },
   {
     "name": "Mei",
     "role": "damage",
     "roleName": "Damage",
     "img": "mei",
-    "minor": { "side": "right", "text": "Glacial Propulsion" },
-    "major": { "side": "left", "text": "Deep Freeze" }
+    "minor": {
+      "side": "right",
+      "text": "Glacial Propulsion",
+      "desc": "Double jumping creates a small ice pillar that launches Mei into the air."
+    },
+    "major": {
+      "side": "left",
+      "text": "Deep Freeze",
+      "desc": "Continuously hitting enemies with primary fire freezes them for a short time."
+    }
   },
   {
     "name": "Venture",
     "role": "damage",
     "roleName": "Damage",
     "img": "venture",
-    "minor": { "side": "right", "text": "Excavation Exhilaration" },
-    "major": { "side": "left", "text": "Smart Extender" }
+    "minor": {
+      "side": "right",
+      "text": "Excavation Exhilaration",
+      "desc": "While Tectonic Shock is active, cooldowns refresh 300% faster."
+    },
+    "major": {
+      "side": "left",
+      "text": "Smart Extender",
+      "desc": "Empower SMART Excavator with E to increase its maximum projectile range by 100% for 4 seconds."
+    }
   },
   {
     "name": "Anran",
     "role": "damage",
     "roleName": "Damage",
     "img": "anran",
-    "minor": { "side": "left", "text": "Smoulder" },
-    "major": { "side": "right", "text": "Hungering Blaze" }
+    "minor": {
+      "side": "left",
+      "text": "Smoulder",
+      "desc": "Ignited enemies burn 1.5 seconds longer."
+    },
+    "major": {
+      "side": "right",
+      "text": "Hungering Blaze",
+      "desc": "Increase the healing of Dancing Blaze's subsequent strikes by 25."
+    }
   },
   {
     "name": "Genji",
     "role": "damage",
     "roleName": "Damage",
     "img": "genji",
-    "minor": { "side": "right", "text": "Dragon's Thirst" },
-    "major": { "side": "left", "text": "Blade Twisting" }
+    "minor": {
+      "side": "right",
+      "text": "Dragon's Thirst",
+      "desc": "Dragonblade swings gain 30% lifesteal."
+    },
+    "major": {
+      "side": "left",
+      "text": "Blade Twisting",
+      "desc": "Swift Strike deals 25 additional damage over time if the enemy is below half health."
+    }
   },
   {
     "name": "Pharah",
     "role": "damage",
     "roleName": "Damage",
     "img": "pharah",
-    "minor": { "side": "left", "text": "Concussive Force" },
-    "major": { "side": "right", "text": "Rocket Salvo" }
+    "minor": {
+      "side": "left",
+      "text": "Concussive Force",
+      "desc": "Concussive Blast deals up to 30 explosion damage."
+    },
+    "major": {
+      "side": "right",
+      "text": "Rocket Salvo",
+      "desc": "After using a movement ability, your next primary fire also shoots two spiraling mini-rockets, each exploding for 30 damage."
+    }
   },
   {
     "name": "Ashe",
     "role": "damage",
     "roleName": "Damage",
     "img": "ashe",
-    "minor": { "side": "left", "text": "Remote Detonator" },
-    "major": { "side": "left", "text": "Viper's Sting" }
+    "minor": {
+      "side": "left",
+      "text": "Remote Detonator",
+      "desc": "After using Dynamite, pressing E again causes it to detonate after a 0.5 second delay."
+    },
+    "major": {
+      "side": "left",
+      "text": "Viper's Sting",
+      "desc": "Hitting 2 consecutive scoped shots on a target deals 25 extra damage."
+    }
   },
   {
     "name": "Junkrat",
     "role": "damage",
     "roleName": "Damage",
     "img": "junkrat",
-    "minor": { "side": "left", "text": "Nitro Boost" },
-    "major": { "side": "right", "text": "Frag Cannon" }
+    "minor": {
+      "side": "left",
+      "text": "Nitro Boost",
+      "desc": "During RIP-Tire, use LSHIFT to gain a quick boost of speed. Doing so reduces RIP-Tire's damage by 50%."
+    },
+    "major": {
+      "side": "right",
+      "text": "Frag Cannon",
+      "desc": "Frag Launcher's projectile speed is increased by 25%."
+    }
   },
   {
     "name": "Vendetta",
     "role": "damage",
     "roleName": "Damage",
     "img": "vendetta",
-    "minor": { "side": "right", "text": "Raging Storm" },
-    "major": { "side": "left", "text": "Siphoning Strike" }
+    "minor": {
+      "side": "right",
+      "text": "Raging Storm",
+      "desc": "Whirlwind Dash continues to spin, hitting 3 more times for 30 damage in a wide area."
+    },
+    "major": {
+      "side": "left",
+      "text": "Siphoning Strike",
+      "desc": "Overhead strikes gain 40% Lifesteal."
+    }
   },
   {
     "name": "Tracer",
     "role": "damage",
     "roleName": "Damage",
     "img": "tracer",
-    "minor": { "side": "left", "text": "Temporal Regen" },
-    "major": { "side": "right", "text": "Quantum Entanglement" }
+    "minor": {
+      "side": "left",
+      "text": "Temporal Regen",
+      "desc": "Passive health regeneration triggers 50% faster."
+    },
+    "major": {
+      "side": "right",
+      "text": "Quantum Entanglement",
+      "desc": "Recall grants 50 overhealth and 20 ammo that decays over time."
+    }
   },
   {
     "name": "Reaper",
     "role": "damage",
     "roleName": "Damage",
     "img": "reaper",
-    "minor": { "side": "right", "text": "Lingering Wraith" },
-    "major": { "side": "right", "text": "Trigger Finger" }
+    "minor": {
+      "side": "right",
+      "text": "Lingering Wraith",
+      "desc": "Leaving Wraith Form grants 30% movement speed for 2 seconds."
+    },
+    "major": {
+      "side": "right",
+      "text": "Trigger Finger",
+      "desc": "Refresh Dire Triggers' cooldown whenever using an ability or reloading."
+    }
   },
   {
     "name": "Shion",
     "role": "damage",
     "roleName": "Damage",
     "img": "shion",
-    "minor": { "side": "right", "text": "X Machina" },
-    "major": { "side": "right", "text": "Faces of Death" }
+    "minor": {
+      "side": "right",
+      "text": "X Machina",
+      "desc": "Execution does 20% more damage to enemies below half health."
+    },
+    "major": {
+      "side": "right",
+      "text": "Faces of Death",
+      "desc": "Gain all other Damage subrole passives (Recon, Specialist and Sharpshooter)."
+    }
   },
   {
     "name": "Hanzo",
     "role": "damage",
     "roleName": "Damage",
     "img": "hanzo",
-    "minor": { "side": "left", "text": "Sonic Disruption" },
-    "major": { "side": "left", "text": "Frost Arrow" }
+    "minor": {
+      "side": "left",
+      "text": "Sonic Disruption",
+      "desc": "Sonic Arrow hacks nearby Health Packs for 30 seconds."
+    },
+    "major": {
+      "side": "left",
+      "text": "Frost Arrow",
+      "desc": "Press R to ready an explosive frost arrow, slowing enemies hit by 35% for 2 seconds."
+    }
   },
   {
     "name": "Soldier: 76",
     "role": "damage",
     "roleName": "Damage",
     "img": "soldier-76",
-    "minor": { "side": "left", "text": "Helix Propulsion" },
-    "major": { "side": "right", "text": "Stim Pack" }
+    "minor": {
+      "side": "left",
+      "text": "Helix Propulsion",
+      "desc": "Helix Rockets' projectile speed is increased by 50%."
+    },
+    "major": {
+      "side": "right",
+      "text": "Stim Pack",
+      "desc": "Stim Pack replaces Biotic Field. On use, Soldier: 76 heals for 30 health per second and gains 20% increased attack speed for 5 seconds."
+    }
   },
   {
     "name": "Sierra",
     "role": "damage",
     "roleName": "Damage",
     "img": "sierra",
-    "minor": { "side": "right", "text": "Tight Grip" },
-    "major": { "side": "right", "text": "Locked In" }
+    "minor": {
+      "side": "right",
+      "text": "Tight Grip",
+      "desc": "Helix Rifle's bullet spread tightens 70% faster and widens 30% slower."
+    },
+    "major": {
+      "side": "right",
+      "text": "Locked In",
+      "desc": "Hitting an enemy with Tracking Shot increases your attack speed by 20% for 2 seconds."
+    }
   },
   {
     "name": "Echo",
     "role": "damage",
     "roleName": "Damage",
     "img": "echo",
-    "minor": { "side": "right", "text": "Partial Scan" },
-    "major": { "side": "right", "text": "Focused Rush" }
+    "minor": {
+      "side": "right",
+      "text": "Partial Scan",
+      "desc": "Duplicate starts with 30% of its ultimate charge."
+    },
+    "major": {
+      "side": "right",
+      "text": "Focused Rush",
+      "desc": "Focusing Beam's range is increased by 8 meters and movement speed is increased by 25% when active."
+    }
   },
   {
     "name": "Freja",
     "role": "damage",
     "roleName": "Damage",
     "img": "freja",
-    "minor": { "side": "left", "text": "Relentless Barrage" },
-    "major": { "side": "left", "text": "Aerial Recovery" }
+    "minor": {
+      "side": "left",
+      "text": "Relentless Barrage",
+      "desc": "Direct hits with Take Aim refund 8 automatic bolt ammo."
+    },
+    "major": {
+      "side": "left",
+      "text": "Aerial Recovery",
+      "desc": "After using Updraft, heal for 30 health per second until Freja touches the ground."
+    }
   },
   {
     "name": "Bastion",
     "role": "damage",
     "roleName": "Damage",
     "img": "bastion",
-    "minor": { "side": "right", "text": "Configuration Reload" },
-    "major": { "side": "right", "text": "Self-Repair" }
+    "minor": {
+      "side": "right",
+      "text": "Configuration Reload",
+      "desc": "Reduce the cooldown of A-36 Tactical Grenade by 4 seconds when changing configurations."
+    },
+    "major": {
+      "side": "right",
+      "text": "Self-Repair",
+      "desc": "Press E to rapidly heal yourself."
+    }
   },
   {
     "name": "Sombra",
     "role": "damage",
     "roleName": "Damage",
     "img": "sombra",
-    "minor": { "side": "right", "text": "Ctrl Alt Esc" },
-    "major": { "side": "right", "text": "Viral Replication" }
+    "minor": {
+      "side": "right",
+      "text": "Ctrl Alt Esc",
+      "desc": "Teleporting with Translocator while below half health initiates passive health regeneration."
+    },
+    "major": {
+      "side": "right",
+      "text": "Viral Replication",
+      "desc": "Hitting a hacked enemy with Virus spreads Virus to enemies within 8 meters."
+    }
   },
   {
     "name": "Cassidy",
     "role": "damage",
     "roleName": "Damage",
     "img": "cassidy",
-    "minor": { "side": "left", "text": "Bang Bang" },
-    "major": { "side": "right", "text": "Silver Bullet" }
+    "minor": {
+      "side": "left",
+      "text": "Bang Bang",
+      "desc": "Cassidy throws a second Flashbang that travels farther, but both Flashbangs deal 40% reduced damage."
+    },
+    "major": {
+      "side": "right",
+      "text": "Silver Bullet",
+      "desc": "Peacekeeper's secondary fire is replaced with a piercing shot that inflicts bleeding. Combat Roll and Deadeye reset its cooldown."
+    }
   },
 
   {
@@ -318,111 +630,223 @@
     "role": "support",
     "roleName": "Support",
     "img": "juno",
-    "minor": { "side": "right", "text": "Locked On" },
-    "major": { "side": "right", "text": "Faster Blaster" }
+    "minor": {
+      "side": "right",
+      "text": "Locked On",
+      "desc": "Reduce the cooldown of Pulsar Torpedoes by 1 second for each enemy hit."
+    },
+    "major": {
+      "side": "right",
+      "text": "Faster Blaster",
+      "desc": "While Glide Boost is active, Mediblaster fires continuously."
+    }
   },
   {
     "name": "Kiriko",
     "role": "support",
     "roleName": "Support",
     "img": "kiriko",
-    "minor": { "side": "right", "text": "Fortune Teller" },
-    "major": { "side": "right", "text": "Foxtrot" }
+    "minor": {
+      "side": "right",
+      "text": "Fortune Teller",
+      "desc": "Kunai hits launch 2 Healing Ofuda to an ally in front of you."
+    },
+    "major": {
+      "side": "right",
+      "text": "Foxtrot",
+      "desc": "Protection Suzu grants allies 30% increased movement speed for 4 seconds."
+    }
   },
   {
     "name": "Mizuki",
     "role": "support",
     "roleName": "Support",
     "img": "mizuki",
-    "minor": { "side": "right", "text": "Exposed Soul" },
-    "major": { "side": "left", "text": "Resonant Return" }
+    "minor": {
+      "side": "right",
+      "text": "Exposed Soul",
+      "desc": "Hitting an enemy with Binding Chain increases your damage dealt to them by 30% for 2 seconds."
+    },
+    "major": {
+      "side": "left",
+      "text": "Resonant Return",
+      "desc": "Healing Kasa bounces one additional time. Each bounce increases its healing by 10."
+    }
   },
   {
     "name": "Moira",
     "role": "support",
     "roleName": "Support",
     "img": "moira",
-    "minor": { "side": "right", "text": "Ethical Nourishment" },
-    "major": { "side": "right", "text": "Phantom Step" }
+    "minor": {
+      "side": "right",
+      "text": "Ethical Nourishment",
+      "desc": "Biotic Orb's first 30 healing is instant on each ally it encounters."
+    },
+    "major": {
+      "side": "right",
+      "text": "Phantom Step",
+      "desc": "Fade lasts 0.5 seconds longer and boosts jump height by 50%."
+    }
   },
   {
     "name": "Zenyatta",
     "role": "support",
     "roleName": "Support",
     "img": "zenyatta",
-    "minor": { "side": "right", "text": "Ascendance" },
-    "major": { "side": "right", "text": "Dual Harmony" }
+    "minor": {
+      "side": "right",
+      "text": "Ascendance",
+      "desc": "Activate and hold Double Jump to hover for up to 3 seconds."
+    },
+    "major": {
+      "side": "right",
+      "text": "Dual Harmony",
+      "desc": "Gain a 2nd Harmony Orb but they both heal for 70% effectiveness."
+    }
   },
   {
     "name": "Brigitte",
     "role": "support",
     "roleName": "Support",
     "img": "brigitte",
-    "minor": { "side": "right", "text": "Morale Boost" },
-    "major": { "side": "left", "text": "Inspiring Strike" }
+    "minor": {
+      "side": "right",
+      "text": "Morale Boost",
+      "desc": "Inspire lasts 3 seconds longer when activated by Whip Shot."
+    },
+    "major": {
+      "side": "left",
+      "text": "Inspiring Strike",
+      "desc": "Shield Bash grants 30% increased movement speed for 2 seconds. Inspire's healing is instant when activated by Shield Bash."
+    }
   },
   {
     "name": "Jetpack Cat",
     "role": "support",
     "roleName": "Support",
     "img": "jetpack_cat",
-    "minor": { "side": "left", "text": "Ulterior Motive" },
-    "major": { "side": "left", "text": "Purrfect Form" }
+    "minor": {
+      "side": "left",
+      "text": "Ulterior Motive",
+      "desc": "15% of Biotic Pawjectiles healing recovers fuel."
+    },
+    "major": {
+      "side": "left",
+      "text": "Purrfect Form",
+      "desc": "Each pulse of Purr contains 3 waves."
+    }
   },
   {
     "name": "Wuyang",
     "role": "support",
     "roleName": "Support",
     "img": "wuyang",
-    "minor": { "side": "right", "text": "Balance" },
-    "major": { "side": "right", "text": "Falling Rain" }
+    "minor": {
+      "side": "right",
+      "text": "Balance",
+      "desc": "When you deal damage with water orbs, increase Restorative Stream's passive healing by 30% for 2 seconds."
+    },
+    "major": {
+      "side": "right",
+      "text": "Falling Rain",
+      "desc": "Simultaneously control 3 water orbs that deal 60% decreased damage and have 25% decreased empowered explosion radius."
+    }
   },
   {
     "name": "Lúcio",
     "role": "support",
     "roleName": "Support",
     "img": "lucio",
-    "minor": { "side": "right", "text": "Beat Drop" },
-    "major": { "side": "left", "text": "Noise Violation" }
+    "minor": {
+      "side": "right",
+      "text": "Beat Drop",
+      "desc": "Amp It Up is active during Sound Barrier."
+    },
+    "major": {
+      "side": "left",
+      "text": "Noise Violation",
+      "desc": "Crossfade's range is increased by 150% while Amp It Up is active."
+    }
   },
   {
     "name": "Illari",
     "role": "support",
     "roleName": "Support",
     "img": "illari",
-    "minor": { "side": "right", "text": "Summer Solstice" },
-    "major": { "side": "right", "text": "Sunburn" }
+    "minor": {
+      "side": "right",
+      "text": "Summer Solstice",
+      "desc": "Captive Sun grants Illari 20% increased flight and attack speed, and extends her flight duration by 3 seconds."
+    },
+    "major": {
+      "side": "right",
+      "text": "Sunburn",
+      "desc": "Outburst ignites enemies, dealing an additional 50 damage over 3 seconds."
+    }
   },
   {
     "name": "Mercy",
     "role": "support",
     "roleName": "Support",
     "img": "mercy",
-    "minor": { "side": "left", "text": "Angelic Resurrection" },
-    "major": { "side": "left", "text": "Chain Boost" }
+    "minor": {
+      "side": "left",
+      "text": "Angelic Resurrection",
+      "desc": "Mercy gains 100 overhealth after casting Resurrect."
+    },
+    "major": {
+      "side": "left",
+      "text": "Chain Boost",
+      "desc": "Caduceus Staff's damage boost is increased by 5% and links to a second nearby ally."
+    }
   },
   {
     "name": "Lifeweaver",
     "role": "support",
     "roleName": "Support",
     "img": "lifeweaver",
-    "minor": { "side": "right", "text": "Dashing Escape" },
-    "major": { "side": "right", "text": "Superbloom" }
+    "minor": {
+      "side": "right",
+      "text": "Dashing Escape",
+      "desc": "Rejuvenating Dash's distance is increased by 30%."
+    },
+    "major": {
+      "side": "right",
+      "text": "Superbloom",
+      "desc": "Thorns detonate for 40 extra damage when enough stick within 2.5 seconds."
+    }
   },
   {
     "name": "Ana",
     "role": "support",
     "roleName": "Support",
     "img": "ana",
-    "minor": { "side": "right", "text": "Speed Serum" },
-    "major": { "side": "right", "text": "Headhunter" }
+    "minor": {
+      "side": "right",
+      "text": "Speed Serum",
+      "desc": "Nano Boost grants a 30% movement speed boost to both Ana and her target."
+    },
+    "major": {
+      "side": "right",
+      "text": "Headhunter",
+      "desc": "Biotic Rifle can crit enemies."
+    }
   },
   {
     "name": "Baptiste",
     "role": "support",
     "roleName": "Support",
     "img": "baptiste",
-    "minor": { "side": "right", "text": "Assault Burst" },
-    "major": { "side": "left", "text": "Automated Healing" }
+    "minor": {
+      "side": "right",
+      "text": "Assault Burst",
+      "desc": "Regenerative Burst now provides Baptiste with 20% increased attack speed for 3 seconds."
+    },
+    "major": {
+      "side": "left",
+      "text": "Automated Healing",
+      "desc": "Using any ability triggers Baptiste's Shoulder Turret, periodically firing up to 3 shots at allies, each restoring 40 health."
+    }
   }
 ]
