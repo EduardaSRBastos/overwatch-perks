@@ -60,7 +60,7 @@
     "major": {
       "side": "left",
       "text": "Shield Slam",
-      "desc": "While Barrier Field is active, use [Secondary Fire/Right Click] to damage and knockback enemies."
+      "desc": "While Barrier Field is active, use [Primary Fire] to damage and knockback enemies."
     }
   },
   {
@@ -70,8 +70,8 @@
     "img": "roadhog",
     "minor": {
       "side": "right",
-      "text": "Shrapnel Launcher",
-      "desc": "Extend the range of Scrap Gun's secondary fire by 50% and tighten its burst spread by 25%."
+      "text": "Here, Piggy Piggy",
+      "desc": "During Whole Hog, Chain Hook's cooldown is reduced by 80%."
     },
     "major": {
       "side": "left",
@@ -124,7 +124,7 @@
     "major": {
       "side": "left",
       "text": "Willy-Willy",
-      "desc": "When recalling Jagged Blade its radius is increased by 100% and it deals 30 additional impact damage."
+      "desc": "When recalling Jagged Blade, its radius is increased by 100% and it deals 30 additional impact damage."
     }
   },
   {
@@ -135,7 +135,7 @@
     "minor": {
       "side": "right",
       "text": "Multi-Ball",
-      "desc": "Press A within 5 seconds after using Minefield to deploy 7 additional mines."
+      "desc": "Press Q within 5 seconds after using Minefield to deploy 7 additional mines."
     },
     "major": {
       "side": "left",
@@ -236,7 +236,7 @@
     "major": {
       "side": "right",
       "text": "Revitalizing Barrier",
-      "desc": "Barrier Projector heals allies within it for 35 health per second."
+      "desc": "Barrier Projector heals allies within it for 30 health per second."
     }
   },
 
@@ -253,7 +253,7 @@
     "major": {
       "side": "left",
       "text": "Anchor Bolts",
-      "desc": "Deploy Turret's throw range is increased by 50% and it can now attach to walls and ceilings."
+      "desc": "Deploy Turret's throw range is increased by 25% and it can now attach to walls and ceilings."
     }
   },
   {
@@ -296,7 +296,7 @@
     "minor": {
       "side": "left",
       "text": "Suppressive Security",
-      "desc": "Override Protocol's light rounds slow enemies by 30% for 1.5 second."
+      "desc": "Override Protocol's light rounds slow enemies by 30% for 1.5 seconds."
     },
     "major": {
       "side": "left",
@@ -456,7 +456,7 @@
     "minor": {
       "side": "left",
       "text": "Temporal Regen",
-      "desc": "Passive health regeneration triggers 50% faster."
+      "desc": "Passive health regeneration triggers 100% faster."
     },
     "major": {
       "side": "right",
@@ -493,7 +493,7 @@
     "major": {
       "side": "right",
       "text": "Faces of Death",
-      "desc": "Gain all other Damage subrole passives (Recon, Specialist and Sharpshooter)."
+      "desc": "Gain all other Damage subrole passives (Recon, Specialist, and Sharpshooter)."
     }
   },
   {
@@ -568,7 +568,7 @@
     "minor": {
       "side": "left",
       "text": "Relentless Barrage",
-      "desc": "Direct hits with Take Aim refund 8 automatic bolt ammo."
+      "desc": "Direct hits with Take Aim refund 5 automatic bolt ammo."
     },
     "major": {
       "side": "left",
@@ -590,22 +590,6 @@
       "side": "right",
       "text": "Self-Repair",
       "desc": "Press E to rapidly heal yourself."
-    }
-  },
-  {
-    "name": "Sombra",
-    "role": "damage",
-    "roleName": "Damage",
-    "img": "sombra",
-    "minor": {
-      "side": "right",
-      "text": "Ctrl Alt Esc",
-      "desc": "Teleporting with Translocator while below half health initiates passive health regeneration."
-    },
-    "major": {
-      "side": "right",
-      "text": "Viral Replication",
-      "desc": "Hitting a hacked enemy with Virus spreads Virus to enemies within 8 meters."
     }
   },
   {
@@ -761,7 +745,7 @@
     "minor": {
       "side": "right",
       "text": "Beat Drop",
-      "desc": "Amp It Up is active during Sound Barrier."
+      "desc": "Amp It Up is active for 4 seconds after casting Sound Barrier."
     },
     "major": {
       "side": "left",
@@ -847,6 +831,38 @@
       "side": "left",
       "text": "Automated Healing",
       "desc": "Using any ability triggers Baptiste's Shoulder Turret, periodically firing up to 3 shots at allies, each restoring 40 health."
+    }
+  },
+  {
+    "name": "Sombra",
+    "role": "support",
+    "roleName": "Support",
+    "img": "sombra",
+    "minor": {
+      "side": "left",
+      "text": "Life Hack",
+      "desc": "EMP applies Hotfix to all nearby allies."
+    },
+    "major": {
+      "side": "right",
+      "text": "Cybersecurity",
+      "desc": "Cyberspace's healing is doubled on allies below half health."
+    }
+  },
+  {
+    "name": "Doctrine",
+    "role": "support",
+    "roleName": "Support",
+    "img": "doctrine",
+    "minor": {
+      "side": "left",
+      "text": "Saving Grace",
+      "desc": "Invigorating Drones heal for 40 health when applied."
+    },
+    "major": {
+      "side": "left",
+      "text": "Transfusion",
+      "desc": "Reduce Infuse's cooldown from damage and healing dealt."
     }
   }
 ]
